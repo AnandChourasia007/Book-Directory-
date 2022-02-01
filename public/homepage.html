@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="./../bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../bootstrap-5.1.3-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./../bootstrap-5.1.3-dist/css/bootstrap-utilities.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="homepage.css">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Bookkeeper's Inn</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Logout</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Add book
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Name of the book</label>
+                  <input type="text" class="form-control" id="bookName">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Short description</label>
+                  <input type="text" class="form-control" id="bookGenre">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Upload the book cover</label>
+                  <input type="file" class="form-control input-pdf" id="bookCover">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Upload the pdf file</label>
+                  <input type="file" class="form-control input-pdf" id="bookPDF">
+                </div>
+                <button type="submit" onclick="addBookCard()" class="btn btn-primary">Submit</button>
+              </form>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class=container cards">
+      <div class="card" style="width: 18rem;">
+        <img src="./img/OIP.png" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title ">The adventures of Sherlock Holmes</h5>
+          <p class="card-text ">The Adventures of Sherlock Holmes is a collection of short stories about Dr. John
+            Watson, the narrator, and the consulting detective Sherlock Holmes, the protagonist. Sherlock Holmes is a
+            detective with extraordinary talents in deduction and observation.</p>
+          <input type="checkbox" class="bookStatus ">Finished reading</label>
+          <a href="https://drive.google.com/uc?id=1SIIoZYvdbvfGLY4D59sVU2aTUw9Ck7t-&export=download"
+            class="btn btn-primary ">Download locally</a>
+          <a href="https://drive.google.com/file/d/1SIIoZYvdbvfGLY4D59sVU2aTUw9Ck7t-/view?usp=sharing"
+            class="btn btn-success ">Read now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; ">
+        <img src="./img/Atomic Habits.jpg" class="card-img-top " alt="... ">
+        <div class="card-body ">
+          <h5 class="card-title ">Atomic Habits</h5>
+          <p class="card-text ">Atomic Habits by James Clear is the definitive guide on habit change. Learn how to
+            create good habits and break bad ones with a simple step-by-step framework based on the best techniques from
+            behavioral science. Highly practical, a must-read if you’re looking to upgrade your behavior and make the
+            best version of yourself.</p>
+          <input type="checkbox" class="bookStatus ">Finished reading</label>
+          <a href="https://drive.google.com/uc?id=1EodSbALCgujXY3VwP2L7LRoISRzMOb5R&export=download"
+            class="btn btn-primary ">Download locally</a>
+          <a href="https://drive.google.com/file/d/1EodSbALCgujXY3VwP2L7LRoISRzMOb5R/view?usp=sharing"
+            class="btn btn-success ">Read now</a>
+        </div>
+      </div>
+      <div class="card " style="width: 18rem; ">
+        <img src="./img/book3.png " class="card-img-top " alt="...">
+        <div class="card-body ">
+          <h5 class="card-title ">Harry Potter and the cursed child</h5>
+          <p class="card-text ">Harry Potter and the Cursed Child” is about the journey Albus takes while growing up,
+            and the roles he and his best friend, Scorpius (Draco Malfoy's son), play when dark forces, perhaps in
+            league with Voldemort, once again threaten the fate of the planet.</p>
+          <input type="checkbox" class="bookStatus ">Finished reading</label>
+          <a href="https://drive.google.com/uc?id=1iYtrCuxw5-08HWSI-Zl1gkT7yd3jQIAA&export=download"
+            class="btn btn-primary ">Download locally</a>
+          <a href="https://drive.google.com/file/d/1iYtrCuxw5-08HWSI-Zl1gkT7yd3jQIAA/view?usp=sharing"
+            class="btn btn-success ">Read now</a>
+        </div>
+      </div>
+      <div class="card " style="width: 18rem; ">
+        <img src="./img/How to win friends.jpg" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title ">How to Win Friends and Influence People</h5>
+          <p class="card-text ">How to Win Friends and Influence People teaches readers how to connect with
+            people, be more likable, win deals and improve relationships.Dale Carnegie’s quintessential principles from
+            this groundbreaking book have stood the test of time. </p>
+          <input type="checkbox" class="bookStatus ">Finished reading</label>
+          <a href="https://drive.google.com/uc?id=13ieg9KRF9xqS1RJWBDe8T1_5JRzbTeoT&export=download"
+            class="btn btn-primary ">Download locally</a>
+          <a href="https://drive.google.com/file/d/13ieg9KRF9xqS1RJWBDe8T1_5JRzbTeoT/view?usp=sharing"
+            class="btn btn-success ">Read now</a>
+        </div>
+      </div>
+      <div class="card " style="width: 18rem; ">
+        <img src="./img/book5" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title ">Work Rules</h5>
+          <p class="card-text ">Work Rules! is a detailed playbook for leaders who strive to emulate Google's people
+            success in their own teams and organizations. This manifesto of simple truths offers transformative guidance
+            to leaders who want to improve teams from the inside out instead of top down.</p>
+          <input type="checkbox" class="bookStatus ">Finished reading</label>
+          <a href="https://drive.google.com/uc?id=1040adM2AFaFkujZxt95AUzhRelW7Pvy3&export=download"
+            class="btn btn-primary ">Download locally</a>
+          <a href="https://drive.google.com/file/d/1040adM2AFaFkujZxt95AUzhRelW7Pvy3/view?usp=sharing"
+            class="btn btn-success ">Read now</a>
+        </div>
+      </div>
+      <div class="card " style="width: 18rem; ">
+        <img src="./img/book6.jpg" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title ">Surely you're joking Mr. Feynman!!!</h5>
+          <p class="card-text ">A collection of interesting stories from the life of the fascinating, infinitely
+            curious, and Nobel Prize-winning physicist, Richard Feynman. Feynman reminds you of the importance of
+            questioning the status quo, the joy of learning, and how to approach life with an
+            open mind and a bias for adventure.</p>
+          <input type="checkbox" class="bookStatus ">Finished reading</label>
+          <a href="https://drive.google.com/uc?id=1EodSbALCgujXY3VwP2L7LRoISRzMOb5R&export=download"
+            class="btn btn-primary ">Download locally</a>
+          <a href="https://drive.google.com/file/d/1EodSbALCgujXY3VwP2L7LRoISRzMOb5R/view?usp=sharing"
+            class="btn btn-success ">Read now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p "
+    crossorigin="anonymous "></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    -->
+  <script src="../js/homepage.js "></script>
+</body>
+
+</html>
